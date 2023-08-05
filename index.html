@@ -22,6 +22,7 @@
       color: #f2f2f2;
       width: 100vw;
       flex-direction: row;
+      align-items: center;
     }
 
     .HeaderLogo {
@@ -29,21 +30,26 @@
       font-weight: bold;
       font-size: 24px;
       margin-bottom: 10px;
-  }
-
-    .HeaderLink1,
-    .HeaderLink2,
-    .HeaderLink3 {
-     font-size: 18px;
-     color: #E5E7EB
-  }
+      position: absolute;
+      top: 0;
+      left: 0px;
+      padding: 10px; 
+    }
 
     .WebsiteInfo {
       font-size: 48px;
-      font: extra-bold;
-      margin-right: 800px;
+      font: bold;
+      margin-right: 850px;
       margin-top: 10px;
       color: #F9FAF8;
+    }
+
+    .WebsiteInfo p {
+      margin: 0px 0;
+    }
+
+    .WebsiteInfo p:last-child {
+      margin-left: -130px;
     }
 
     .WebsiteSubtext {
@@ -52,13 +58,24 @@
       color: #777777;
     }
 
+    .WebsiteSubtext p {
+      margin: 0px 0;
+    }
+
+    .WebsiteSubtext p:nth-child(2) {
+      margin-left: -87px;
+    }
+    .WebsiteSubtext p:nth-child(3) {
+      margin-left: -335px;
+    }
+
     .InfoContainer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     }
 
-    
+
   .SomeRandomInformationBox {
     border-radius: 10px;
     padding-top: 20px;
@@ -67,11 +84,10 @@
     text-align: center;
     flex: 1;
     margin-right: 10px;
-    height: 50px;
-    width:  100px;
+    height: 80px;
+    width:  105px;
     margin-left: 50px;
     margin-top: 20px;
-    height: 60px;
   }
 
 
@@ -84,7 +100,7 @@
     .RandomInfo2,
     .RandomInfo3,
     .RandomInfo4 {
-      margin-bottom: 10px;
+      margin-top: 85px;
     }
 
     .InspirationalQuoteBox {
@@ -99,9 +115,9 @@
 
     .Quote {
       color: #1F2937;
-      font-style: light italic;
+      font-style: italic;
       font-size: 18px;
-      margin-top: 20px;
+      margin-top: -20px;
       padding-right: 500px;
       padding-left: 500px;
     }
@@ -131,7 +147,7 @@
 
     .image-placeholder {
       margin-left: 1000px;
-      margin-top: -30px;
+      margin-top: -100px;
       width: 300px; 
       height: 100px;
       background-color: #969191; 
@@ -157,7 +173,7 @@
       cursor: pointer;
     }
 
-    .DownBackground {
+    .Down-background {
       background-color: #000000;
       padding: 20px;
       text-align: center;
@@ -174,32 +190,47 @@
       display: row ;
     }
 
+    .HeaderLink {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
   </style>
 </head>
 <body>
   <div class="HeadingBox">
+    <div class="HeaderLink">
+      <a href="#">Header Link 1</a>
+      <a href="#">Header Link 2</a>
+      <a href="#">Header Link 3</a>
+    </div>
     <div class="HeaderLogo">Header Logo</div>
-    <div class="HeaderLink1">Header Link 1</div>
-    <div class="HeaderLink2">Header Link 2</div>
-    <div class="HeaderLink3">Header Link 3</div>
-    <div class="WebsiteInfo">This website isn`t awesome!</div>
-    <div class="WebsiteSubtext">This website has some subtext that goes here under the main title. It's smaller font and color is lower contrast!</div>
+    <div class="WebsiteInfo">
+      <p>This website isn't</p>
+      <p>awesome!</p>
+    </div>
+    <div class="WebsiteSubtext">
+      <p>This website has some subtext that goes here under the</p>
+      <p>main title. It's smaller font and color is lower</p>
+      <p>contrast!</p>
+    </div>
     <div class="image-placeholder"></div>
   </div>
 
 
   <div class="FlexBoxPlz">
     <div class= "SomeRandomInformationBox">
-      <div class="RandomInfo1">This is some text </div>
+      <div class="RandomInfo1">This is some text</div>
     </div>
     <div class= "SomeRandomInformationBox">
-      <div class="RandomInfo2">This is some text </div>
+      <div class="RandomInfo2">This is some text</div>
     </div>
     <div class = "SomeRandomInformationBox">
-      <div class="RandomInfo3">This is some text </div>
+      <div class="RandomInfo3">This is some text</div>
     </div>
     <div class="SomeRandomInformationBox">
-      <div class="RandomInfo4">This is some text </div>
+      <div class="RandomInfo4">This is some text</div>
     </div>
   </div>
 
@@ -220,7 +251,7 @@
           <div class="SignUpButton">Sign Up</div>
         </div>
       </div>
-      <div class="DownBackground">
+      <div class="Down-background">
         <div class="Copyright">Copyright © REPTILOID123</div>
       </div>
     </body>
@@ -228,5 +259,3 @@
 
     </style>
   </head>
-  <body>
-                       
