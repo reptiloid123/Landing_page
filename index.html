@@ -16,8 +16,8 @@
     }
 
     .HeadingBox {
-      background-color: #1F2937;
-      padding: 20px;
+      background-color: #1f2937;
+      padding: 3em 14em;
       text-align: center;
       color: #f2f2f2;
       width: 100vw;
@@ -28,7 +28,7 @@
 
     .HeaderLogo {
       color: #F9FAF8;
-      font-weight: bold;
+      font-weight: 900;
       font-size: 24px;
       margin-bottom: 10px;
       position: absolute;
@@ -39,7 +39,7 @@
 
     .WebsiteInfo {
       font-size: 48px;
-      font-weight: bold;
+      font-weight: 900;
       margin-right: 805px;
       margin-top: 20px;
       color: #F9FAF8;
@@ -54,9 +54,10 @@
     }
 
     .WebsiteSubtext {
-      margin-right: 800px;
       font-size: 16px;
-      color: #777777;
+      color: #E5E7EB;
+      text-decoration: none;
+      margin-right: 800px;
     }
 
     .WebsiteSubtext p {
@@ -106,9 +107,9 @@
 
     .InspirationalQuoteBox {
       color: #E5E7EB;
-      height: 400px;
+      height: 150px;
       background-color: #eaeaea;
-      padding: 60px;
+      padding: 7em 13em;
       margin-top: 80px;
       text-align: left;
     }
@@ -118,9 +119,6 @@
       font-style: italic;
       font-size: 36px;
       margin-top: -5px;
-      padding-right: 500px;
-      padding-left: 500px;
-      margin: 20px;
     }
 
     .Author {
@@ -181,7 +179,7 @@
     }
 
     .SignUpButton {
-      background-color: #2b97c9;
+      background-color: #2271f1;
       color: #ffffff;
       padding: 10px 20px;
       border-radius: 4px;
@@ -201,16 +199,31 @@
       font-size: 14px;
     }
 
+
     .FlexBoxPlz {
       display: row ;
     }
 
-    .HeaderLink {
+    .HeaderLink ul {
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: right;
-      margin-right: 10px;
+      list-style: none;
+      padding:0;
+    }
+
+    .HeaderLink li {
+      display: inline; 
+      margin-right: 20px; 
+    }
+
+
+    .HeaderLink {
+      justify-content: right;
+      flex-direction: row;
+      margin-top:30px;
+      top: -20px;
+      right: 20px;
     }
 
 
@@ -226,16 +239,16 @@
     margin-right: 860px;
     }
 
-
-
   </style>
 </head>
 <body>
   <div class="HeadingBox">
     <div class="HeaderLink">
-      <a href="#" onclick="return false;" rel="nofollow">Header Link one </a>
-      <a href="#" onclick="return false;" rel="nofollow">Header Link two </a>
-      <a href="#" onclick="return false;" rel="nofollow">Header Link three </a>
+      <ul>
+          <li>Header Link one</li>
+          <li>Header Link two</li>
+          <li>Header Link three</li>
+      </ul>
     </div>
     <div class="HeaderLogo">Header Logo</div>
     <div class="WebsiteInfo">
@@ -273,10 +286,10 @@
 
       <div class="InspirationalQuoteBox">
         <div class="Quote">
-          <p>This is an inspiring quote or a testimonial from a</p>
-          <p>customer.Maybe it's just filling up space, or maybe</p>
-          <p>people will actually read it.Who knows? All I know</p>
-          <p>is that it looks nice.</p>
+          <p>This is an inspiring quote or a testimonial from a
+            customer.Maybe it's just filling up space, or maybe
+            people will actually read it.Who knows? All I know
+            is that it looks nice.</p>
         </div>
         <div class="Author">-Thor, God of Thunder</div>
       </div>
