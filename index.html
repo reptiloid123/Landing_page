@@ -23,7 +23,7 @@
       width: 100vw;
       flex-direction: row;
       align-items: center;
-      height:300px;
+      height:400px;
     }
 
     .HeaderLogo {
@@ -31,9 +31,6 @@
       font-weight: 900;
       font-size: 24px;
       margin-bottom: 10px;
-      position: absolute;
-      top: 0;
-      left: 130px;
       padding: 10px; 
     }
 
@@ -154,7 +151,7 @@
     .image-placeholder {
       justify-content: center;
       margin-left: 850px;
-      margin-top: -160px;
+      margin-top: -210px;
       width: 600px; 
       height: 210px;
       background-color: #969191; 
@@ -176,9 +173,11 @@
 
     .SignUpButtonBox {
       margin-top: 20px;
+      text-align: center; 
     }
 
-    .SignUpButton {
+
+    .SignUpButton2 {
       background-color: #2271f1;
       color: #ffffff;
       padding: 10px 20px;
@@ -219,11 +218,14 @@
 
 
     .HeaderLink {
-      justify-content: right;
       flex-direction: row;
-      margin-top:30px;
-      top: -20px;
-      right: 20px;
+    }
+
+
+    .HeaderTitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
 
@@ -239,18 +241,36 @@
     margin-right: 860px;
     }
 
+    .SignUpButton {
+      background-color: #2271f1;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 70px;
+    }
+
+    .SubtextAndSignUp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      margin-left: 360px;
+    } 
   </style>
 </head>
 <body>
   <div class="HeadingBox">
-    <div class="HeaderLink">
-      <ul>
+    <div class="HeaderTitle">
+      <div class="HeaderLogo">Header Logo
+      </div>
+      <div class="HeaderLink">
+        <ul>
           <li>Header Link one</li>
           <li>Header Link two</li>
           <li>Header Link three</li>
-      </ul>
+        </ul>
+      </div>
     </div>
-    <div class="HeaderLogo">Header Logo</div>
     <div class="WebsiteInfo">
       <p>This website isn't</p>
       <p><span class= "awesomeText">awesome!!</span>!</p>
@@ -259,6 +279,11 @@
       <p>This website has some subtext that goes here under the</p>
       <p>main title. It's smaller font and color is lower</p>
       <p>contrast!</p>
+    </div>
+    <div class="SubtextAndSignUp">
+      <div class="SignUpButtonBox">
+        <div class="SignUpButton">Sign Up</div>
+      </div>
     </div>
     <div class="image-placeholder">
       <div class="image-placeholderText">this is a placeholder for an image</div>
@@ -297,7 +322,7 @@
         <div class="CallToAction">Call to Action! It's time!</div>
         <div class="SignUpText">Sign up for our product by clicking that button right over there!</div>
         <div class="SignUpButtonBox">
-          <div class="SignUpButton">Sign Up</div>
+          <div class="SignUpButton2">Sign Up</div>
         </div>
       </div>
       <div class="Down-background">
@@ -306,4 +331,4 @@
     </body>
     </html>
   </head>
-  <body>
+  <body>  
