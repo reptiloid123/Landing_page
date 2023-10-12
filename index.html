@@ -17,6 +17,7 @@
 
     .HeadingBox {
       background-color: #1f2937;
+      padding: 3em 14em;
       text-align: center;
       color: #f2f2f2;
       width: 100vw;
@@ -148,7 +149,6 @@
 
 
     .image-placeholder {
-      display: flex;
       justify-content: center;
       margin-left: 850px;
       margin-top: -210px;
@@ -156,13 +156,10 @@
       height: 210px;
       background-color: #969191; 
       position: relative;
-      align-items:center;
   }
 
     .image-placeholderText {
-      align-items:center;
-      display: flex;
-      justify-content: center;
+      text-align: center;
       font-size:20px;
       width: 100%;
     }
@@ -175,12 +172,6 @@
     }
 
     .SignUpButtonBox {
-      margin-top: 20px;
-      text-align: center; 
-    }
-
-
-    .SignUpButtonBox2 {
       margin-top: 20px;
       text-align: center; 
     }
@@ -228,7 +219,6 @@
 
     .HeaderLink {
       flex-direction: row;
-      margin-bottom:10px;
     }
 
 
@@ -251,21 +241,31 @@
     margin-right: 860px;
     }
 
-    .SignUpButton {
+    .SignUpButtonContainer {
+      margin-left: -250px;
+      justify-content: center;
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .SignUpButton {
+      flex-wrap: wrap;
+      display: flex;
+      align-content: center;
       background-color: #2271f1;
       color: #ffffff;
-      padding: 10px 20px;
+      padding: 10px 50px;
       border-radius: 4px;
       cursor: pointer;
       width: 70px;
-      margin-right: 800px;
     }
 
     .SubtextAndSignUp {
       display: flex;
       justify-content: space-between;
       align-items: center; 
+      margin-left: 360px;
     } 
   </style>
 </head>
@@ -287,15 +287,14 @@
       <p><span class= "awesomeText">awesome!!</span>!</p>
     </div>
     <div class="WebsiteSubtext">
-      <div class="SignUpBox2">
-        <div class="SignUpButtonBox"></div>
-      </div>
       <p>This website has some subtext that goes here under the</p>
       <p>main title. It's smaller font and color is lower</p>
       <p>contrast!</p>
     </div>
-    <div class="SubtextAndSignUp">
-      <div class="SignUpButtonBox">
+    <div class="WebsiteSubtext">
+      <p>This website has some subtext that goes here under the</p>
+      <p>main title. It's smaller font and color is lower</p>
+      <div class='SignUpButtonContainer'>
         <div class="SignUpButton">Sign Up</div>
       </div>
     </div>
@@ -320,9 +319,6 @@
       <div class="RandomInfo4">This is some text</div>
     </div>
   </div>
-
-
-
       <div class="InspirationalQuoteBox">
         <div class="Quote">
           <p>This is an inspiring quote or a testimonial from a
@@ -335,6 +331,7 @@
       <div class="SignUpBox">
         <div class="CallToAction">Call to Action! It's time!</div>
         <div class="SignUpText">Sign up for our product by clicking that button right over there!</div>
+        <div class="SignUpButtonBox">
           <div class="SignUpButton2">Sign Up</div>
         </div>
       </div>
@@ -344,4 +341,4 @@
     </body>
     </html>
   </head>
-  <body>
+  <body>  
